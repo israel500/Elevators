@@ -93,12 +93,14 @@ class Elevator:
         last_floor = self.target[-1] if self.target else self.on_floor
         distance = abs(floor - last_floor)
         result = total_time + distance * ELEVATOR_SPEED + ARRIVAL_DELAY
+        print(result)
         return result
 
 
     def new_call(self, floor): 
         self.time_to_finish = self.time_to_floor(floor)
-        self.whatch = time.time()  
+        self.whatch = time.time()
+        for n in self.num  
         self.target.append(floor) 
         assert self.time_to_finish >= zero
         return self.time_to_finish - ARRIVAL_DELAY

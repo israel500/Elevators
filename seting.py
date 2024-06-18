@@ -10,3 +10,4 @@ ARRIVAL_DELAY = 2
 SCREEN_HEIGHT = 600
 SCREEN_WIDTH = 600
 
+#https://github.com/israel500/Elevators/blob/master/seting.py

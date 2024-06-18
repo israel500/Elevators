@@ -40,5 +40,4 @@ def draw_building(screen):
     floor_height = screen_height // NUM_OF_FLOORS
     for floor in range(NUM_OF_FLOORS):
         screen.blit(floor_texture, (zero, screen_height - (floor + 1) * floor_height))
-        pygame.draw.rect(screen, FLOOR_BAR_COLOR, (zero, screen_height - (floor + 1) * floor_height, hundred_fifty, 7))
        

@@ -18,7 +18,7 @@ class FloorButton:
         if self.color == BUTTON_ACTIVE_COLOR and self.arrival_time:
             time_text = font.render(f'{self.arrival_time:.1f}s', True, TEXT_COLOR)
             screen.blit(time_text, (self.rect.x - 100, self.rect.y +20))
-
+        pygame.draw.rect(screen, FLOOR_BAR_COLOR, (zero, screen_height - (NUM_OF_FLOORS + 1) * floor_height, hundred_fifty, 7))
     def click(self):
         self.color = BUTTON_ACTIVE_COLOR
 
